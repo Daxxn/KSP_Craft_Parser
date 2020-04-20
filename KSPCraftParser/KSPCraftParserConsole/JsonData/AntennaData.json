@@ -1,0 +1,67 @@
+{
+   "Antennas" : [
+         {
+            "Name" : "Comm 16",
+            "FileName" : "",
+            "ECperMit" : 6,
+            "MitsperSec" : 3.33,
+            "Range" : 500000
+         },
+         {
+            "Name" : "Comm 16S",
+            "FileName" : "",
+            "ECperMit" : 6,
+            "MitsperSec" : 3.33,
+            "Range" : 500000
+         },
+         {
+            "Name" : "Comm DTS-M1",
+            "FileName" : "",
+            "ECperMit" : 6,
+            "MitsperSec" : 5.71,
+            "Range" : 2000000000
+         },
+         {
+            "Name" : "Comm HG-55",
+            "FileName" : "",
+            "ECperMit" : 6.67,
+            "MitsperSec" : 20,
+            "Range" : 15000000000
+         },
+         {
+            "Name" : "Comm 88-88",
+            "FileName" : "",
+            "ECperMit" : 10,
+            "MitsperSec" : 20,
+            "Range" : 100000000000
+         },
+         {
+            "Name" : "HG-5 Relay",
+            "FileName" : "",
+            "ECperMit" : 9,
+            "MitsperSec" : 5.71,
+            "Range" : 500000000
+         },
+         {
+            "Name" : "RA-2 Relay",
+            "FileName" : "",
+            "ECperMit" : 24,
+            "MitsperSec" : 2.86,
+            "Range" : 2000000000
+         },
+         {
+            "Name" : "RA-15 Relay",
+            "FileName" : "",
+            "ECperMit" : 12,
+            "MitsperSec" : 5.71,
+            "Range" : 15000000000
+         },
+         {
+            "Name" : "RA-100 Relay",
+            "FileName" : "",
+            "ECperMit" : 6,
+            "MitsperSec" : 11.43,
+            "Range" : 100000000000
+         }
+      ]
+}

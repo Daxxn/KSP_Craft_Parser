@@ -1,0 +1,79 @@
+{
+   "Science" : [
+      {
+         "Name" : "SurfaceSample",
+         "Value" : 30,
+         "DataSize" : 30
+      },
+      {
+         "Name" : "EVAReport",
+         "Value" : 8,
+         "DataSize" : 8
+      },
+      {
+         "Name" : "AsteroidSample",
+         "Value" : 60,
+         "DataSize" : 60
+      },
+      {
+         "Name" : "CrewReport",
+         "Value" : 5,
+         "DataSize" : 5
+      },
+      {
+         "Name" : "MysteryGoo",
+         "Value" : 10,
+         "DataSize" : 10
+      },
+      {
+         "Name" : "MaterialStudy",
+         "Value" : 25,
+         "DataSize" : 25
+      },
+      {
+         "Name" : "TempScan",
+         "Value" : 8,
+         "DataSize" : 8
+      },
+      {
+         "Name" : "PressScan",
+         "Value" : 12,
+         "DataSize" : 12
+      },
+      {
+         "Name" : "SeismicScan",
+         "Value" : 20,
+         "DataSize" : 50
+      },
+      {
+         "Name" : "GravityScan",
+         "Value" : 20,
+         "DataSize" : 60
+      },
+      {
+         "Name" : "AtmoScan",
+         "Value" : 20,
+         "DataSize" : 200
+      },
+      {
+         "Name" : "IRTelescope",
+         "Value" : 15,
+         "DataSize" : 30
+      },
+      {
+         "Name" : "RobotArmScan_1",
+         "Value" : 30,
+         "DataSize" : 30
+      },
+      {
+         "Name" : "RobotArmScan_2",
+         "Value" : 45,
+         "DataSize" : 45
+      },
+      {
+         "Name" : "RobotArmScan_3",
+         "Value" : 60,
+         "DataSize" : 60
+      }
+      ]
+}
