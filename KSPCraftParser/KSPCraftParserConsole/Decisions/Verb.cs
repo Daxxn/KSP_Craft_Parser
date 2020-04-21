@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace KSPCraftParserConsole.Decisions
 {
-    public enum Action
+    public enum Verb
     {
         Open,
         Run,

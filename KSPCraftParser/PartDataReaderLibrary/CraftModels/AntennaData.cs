@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KSPCraftParserConsole.Decisions
+namespace PartDataReaderLibrary.CraftModels
 {
-    public enum Object
+    class AntennaData
     {
-        Craft,
-        Part,
-        Calc
     }
 }

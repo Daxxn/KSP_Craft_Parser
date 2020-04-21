@@ -1,0 +1,1334 @@
+{
+   "ElectricalParts" : [
+      {
+         "name": "Mk1_Cockpit",
+         "FileName": "Mark1Cockpit",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0.4,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 50
+      },
+      {
+         "name": "Mk1_Inline_Cockpit",
+         "FileName": "Mark2Cockpit",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0.3,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 50
+      },
+      {
+         "name": "Mk2_Cockpit",
+         "FileName": "mk2Cockpit.Standard",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0.5,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 150
+      },
+      {
+         "name": "Mk2_Inline_Cockpit",
+         "FileName": "mk2Cockpit.Inline",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0.5,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 150
+      },
+      {
+         "name": "Mk3_Cockpit",
+         "FileName": "mk3Cockpit.Shuttle",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 1,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 500
+      },
+      {
+         "name": "Mk1_Command_Pod",
+         "FileName": "mk1pod.v2",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0.2,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 50
+      },
+      {
+         "name": "Mk2_Command_Pod",
+         "FileName": "Mk2Pod",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0.3,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 200
+      },
+      {
+         "name": "Mk1-3_Command_Pod",
+         "FileName": "mk1-3pod",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0.5,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 150
+      },
+      {
+         "name": "Mk1_Lander_Can",
+         "FileName": "landerCabinSmall",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0.3,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 50
+      },
+      {
+         "name": "Mk2_Lander_Can",
+         "FileName": "mk2LanderCabin.v2",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0.8,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 100
+      },
+      {
+         "name": "M.E.M",
+         "FileName": "MEMLander",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0.8,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 150
+      },
+      {
+         "name": "PPD-12_Cupola_Module",
+         "FileName": "cupola",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0.9,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 200
+      },
+      {
+         "name": "Probodobodyne_RoveMate",
+         "FileName": "roverBody.v2",
+         "Load": 2.4,
+         "LoadScale": "min",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 120
+      },
+      {
+         "name": "Probodobodyne_QBE",
+         "FileName": "probeCoreCube",
+         "Load": 1.5,
+         "LoadScale": "min",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 5
+      },
+      {
+         "name": "Probodobodyne_HECS",
+         "FileName": "probeCoreHex.v2",
+         "Load": 1.5,
+         "LoadScale": "min",
+         "RWLoad": 3,
+         "RWScale": "min",
+         "Production": 0,
+         "Battery": 10
+      },
+      {
+         "name": "Probodobodyne_OKTO",
+         "FileName": "probeCoreOcto.v2",
+         "Load": 1.2,
+         "LoadScale": "min",
+         "RWLoad": 1.8,
+         "RWScale": "min",
+         "Production": 0,
+         "Battery": 10
+      },
+      {
+         "name": "Probodobodyne_OKTO2",
+         "FileName": "probeCoreOcto2.v2",
+         "Load": 1.8,
+         "LoadScale": "min",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 5
+      },
+      {
+         "name": "Probodobodyne_Stayputnik",
+         "FileName": "probeCoreSphere.v2",
+         "Load": 1.67,
+         "LoadScale": "min",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 10
+      },
+      {
+         "name": "Probodobodyne_HECS2",
+         "FileName": "HECS2.ProbeCore",
+         "Load": 3,
+         "LoadScale": "min",
+         "RWLoad": 0.5,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 1000
+      },
+      {
+         "name": "RC-001S_RGU",
+         "FileName": "probeStackSmall",
+         "Load": 3,
+         "LoadScale": "min",
+         "RWLoad": 1.8,
+         "RWScale": "min",
+         "Production": 0,
+         "Battery": 15
+      },
+      {
+         "name": "RC-L01_RGU",
+         "FileName": "probeStackLarge",
+         "Load": 3,
+         "LoadScale": "min",
+         "RWLoad": 0.2,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 30
+      },
+      {
+         "name": "MK2_Drone_Core",
+         "FileName": "mk2DroneCore",
+         "Load": 3,
+         "LoadScale": "min",
+         "RWLoad": 0.5,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 250
+      },
+      {
+         "name": "KV-1",
+         "FileName": "kv1Pod",
+         "Load": 0,
+         "LoadScale": "min",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 50
+      },
+      {
+         "name": "KV-2",
+         "FileName": "kv2Pod",
+         "Load": 0,
+         "LoadScale": "min",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 50
+      },
+      {
+         "name": "KV-3",
+         "FileName": "kv3Pod",
+         "Load": 0,
+         "LoadScale": "min",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 50
+      },
+      {
+         "name": "Mastodon",
+         "FileName": "LiquidEngineKE-1",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 8,
+         "Battery": 0
+      },
+      {
+         "name": "Rhino",
+         "FileName": "Size3AdvancedEngine",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 12,
+         "Battery": 0
+      },
+      {
+         "name": "NERV",
+         "FileName": "nuclearEngine",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 5,
+         "Battery": 0
+      },
+      {
+         "name": "Reliant",
+         "FileName": "liquidEngine",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 7,
+         "Battery": 0
+      },
+      {
+         "name": "Swivel",
+         "FileName": "liquidEngine2",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 6,
+         "Battery": 0
+      },
+      {
+         "name": "Cheetah",
+         "FileName": "LiquidEngineLV-T91",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 5,
+         "Battery": 0
+      },
+      {
+         "name": "Bobcat",
+         "FileName": "LiquidEngineLV-TX87",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 8,
+         "Battery": 0
+      },
+      {
+         "name": "Skiff",
+         "FileName": "LiquidEngineRE-I2",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 3,
+         "Battery": 0
+      },
+      {
+         "name": "Skipper",
+         "FileName": "engineLargeSkipper.v2",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 10,
+         "Battery": 0
+      },
+      {
+         "name": "Wolfhound",
+         "FileName": "LiquidEngineRE-J10",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 8,
+         "Battery": 0
+      },
+      {
+         "name": "Poodle",
+         "FileName": "liquidEngine2-2.v2",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 8,
+         "Battery": 0
+      },
+      {
+         "name": "Mainsail",
+         "FileName": "liquidEngineMainsail.v2",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 12,
+         "Battery": 0
+      },
+      {
+         "name": "Kodiak",
+         "FileName": "LiquidEngineRK-7",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 5,
+         "Battery": 0
+      },
+      {
+         "name": "Vector",
+         "FileName": "SSME",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 3,
+         "Battery": 0
+      },
+      {
+         "name": "Mammoth",
+         "FileName": "Size3EngineCluster",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 12,
+         "Battery": 0
+      },
+      {
+         "name": "Aerospike",
+         "FileName": "toroidalAerospike",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 5,
+         "Battery": 0
+      },
+      {
+         "name": "Ion_Engine",
+         "FileName": "ionEngine",
+         "Load": 8.741,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Juno",
+         "FileName": "miniJetEngine",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 1,
+         "Battery": 0
+      },
+      {
+         "name": "Wheesley",
+         "FileName": "JetEngine",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 4,
+         "Battery": 0
+      },
+      {
+         "name": "Panther",
+         "FileName": "turboJet",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 3,
+         "Battery": 0
+      },
+      {
+         "name": "Goliath",
+         "FileName": "turboFanSize2",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 16,
+         "Battery": 0
+      },
+      {
+         "name": "Whiplash",
+         "FileName": "turboFanEngine",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 5,
+         "Battery": 0
+      },
+      {
+         "name": "R7000_Turboshaft",
+         "FileName": "RotorEngine.03",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0.5,
+         "Battery": 0
+      },
+      {
+         "name": "R121_Turboshaft",
+         "FileName": "RotorEngine.02",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0.4,
+         "Battery": 0
+      },
+      {
+         "name": "CH-J3_Avionics_Hub",
+         "FileName": "avionicsNoseCone",
+         "Load": 0.03,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Small_RW",
+         "FileName": "sasModule",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0.25,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Medium_RW",
+         "FileName": "advSasModule",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0.45,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Large_RW",
+         "FileName": "asasmodule1-2",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0.6,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Compomax_Radial_Tubeless",
+         "FileName": "kOSMachineRad",
+         "Load": 0.04,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0.5,
+         "Battery": 0
+      },
+      {
+         "name": "CX-4181",
+         "FileName": "kOSMachine1m",
+         "Load": 0.04,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "KAL9000",
+         "FileName": "KAL9000",
+         "Load": 0.04,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "KR-2042",
+         "FileName": "KR-2042",
+         "Load": 0.04,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "RoveMax_Model_S2",
+         "FileName": "roverWheel2",
+         "Load": 1,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "RoveMax_M1-F",
+         "FileName": "roverWheelM1-F",
+         "Load": 1,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "RoveMax_Model_M1",
+         "FileName": "roverWheel1",
+         "Load": 2.5,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "TR-2L_Ruggedized_Vehicular_Wheel",
+         "FileName": "wheelMed",
+         "Load": 3.5,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "RoveMax_Model_XL3",
+         "FileName": "roverWheel3",
+         "Load": 5,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Radiator_Panel_(edge)",
+         "FileName": "radPanelEdge",
+         "Load": 0.025,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Radiator_Panel_(small)",
+         "FileName": "radPanelSm",
+         "Load": 0.025,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Radiator_Panel_(large)",
+         "FileName": "radPanelLg",
+         "Load": 0.025,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Thermal_Control_System_(small)",
+         "FileName": "foldingRadSmall",
+         "Load": 0.025,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Thermal_Control_System_(medium)",
+         "FileName": "foldingRadMed",
+         "Load": 0.125,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Thermal_Control_System_(large)",
+         "FileName": "foldingRadLarge",
+         "Load": 0.5,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Gigantor_XL_Solar_Array",
+         "FileName": "largeSolarPanel",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 24.4,
+         "Battery": 0
+      },
+      {
+         "name": "OX-4L_1x6_Photovoltaic_Panels",
+         "FileName": "solarPanels4",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 1.64,
+         "Battery": 0
+      },
+      {
+         "name": "OX-4W_3x2_Photovoltaic_Panels",
+         "FileName": "solarPanels3",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 1.64,
+         "Battery": 0
+      },
+      {
+         "name": "SP-L_1x6_Photovoltaic_Panels",
+         "FileName": "solarPanels2",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 1.64,
+         "Battery": 0
+      },
+      {
+         "name": "SP-W_3x2_Photovoltaic_Panels",
+         "FileName": "solarPanels1",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 1.64,
+         "Battery": 0
+      },
+      {
+         "name": "OX-STAT_Photovoltaic_Panels",
+         "FileName": "solarPanels5",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0.35,
+         "Battery": 0
+      },
+      {
+         "name": "OX-STAT-XL_Photovoltaic_Panels",
+         "FileName": "LgRadialSolarPanel",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 2.8,
+         "Battery": 0
+      },
+      {
+         "name": "PB-NUK_RTG",
+         "FileName": "rtg",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0.75,
+         "Battery": 0
+      },
+      {
+         "name": "Fuel_Cell",
+         "FileName": "FuelCell",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 1.5,
+         "Battery": 0
+      },
+      {
+         "name": "Fuel_Cell_Array",
+         "FileName": "FuelCellArray",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 18,
+         "Battery": 0
+      },
+      {
+         "name": "Z-100",
+         "FileName": "batteryPack",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 100
+      },
+      {
+         "name": "Z-200",
+         "FileName": "batteryBankMini",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 200
+      },
+      {
+         "name": "Z-400",
+         "FileName": "ksp.r.largeBatteryPack",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 400
+      },
+      {
+         "name": "Z-1K",
+         "FileName": "batteryBank",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 1000
+      },
+      {
+         "name": "Z-4K",
+         "FileName": "batteryBankLarge",
+         "Load": 0,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 4000
+      },
+      {
+         "name": "Com_16",
+         "FileName": "longAntenna",
+         "Load": 20,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Com_16S",
+         "FileName": "SurfAntenna",
+         "Load": 20,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Com_DTS-M1",
+         "FileName": "mediumDishAntenna",
+         "Load": 34.3,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Com_HG-55",
+         "FileName": "HighGainAntenna",
+         "Load": 133.3,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Com_88-88",
+         "FileName": "commDish",
+         "Load": 200,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "HG-5_Relay",
+         "FileName": "HighGainAntenna5",
+         "Load": 51.4,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "RA-2_Relay",
+         "FileName": "RelayAntenna5",
+         "Load": 68.6,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "RA-15_Relay",
+         "FileName": "RelayAntenna50",
+         "Load": 68.6,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "RA-100_Relay",
+         "FileName": "RelayAntenna100",
+         "Load": 68.6,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Mobile_Processing_Lab_MPL-LG-2",
+         "FileName": "Large.Crewed.Lab",
+         "Load": 5,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Double-C_Seismic_Accelerometer",
+         "FileName": "sensorAccelerometer",
+         "Load": 0.45,
+         "LoadScale": "min",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Barometer",
+         "FileName": "sensorBarometer",
+         "Load": 0.45,
+         "LoadScale": "min",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Thermomiter",
+         "FileName": "sensorThermometer",
+         "Load": 0.45,
+         "LoadScale": "min",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "GRAVMAX_Negative_Gravioli_Detector",
+         "FileName": "sensorGravimeter",
+         "Load": 0.45,
+         "LoadScale": "min",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "M700_Scanner",
+         "FileName": "SurveyScanner",
+         "Load": 0.5,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "M4435_Scanner",
+         "FileName": "OrbitalScanner",
+         "Load": 0.4,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "SCANSAT_Biome_Scanner",
+         "FileName": "SCANsat.Scanner24",
+         "Load": 1,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "SCANSAT_Radar_Altimetry_Scanner",
+         "FileName": "SCANsat.Scanner",
+         "Load": 6,
+         "LoadScale": "min",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "SCANSAT_SCAN_SAR_Altimetry_Scanner",
+         "FileName": "SCANsat.Scanner2",
+         "Load": 1.5,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "SCANSAT_BTDT",
+         "FileName": "SCANsat.Scanner32",
+         "Load": 6,
+         "LoadScale": "min",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "CRSY_Small_Scanner_Arm",
+         "FileName": "RobotArmScanner.S1",
+         "Load": 13.6,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "SPRT_Medium_Scanner_Arm",
+         "FileName": "RobotArmScanner.S2",
+         "Load": 19.7,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "OP-E_Large_Scanner_Arm",
+         "FileName": "RobotArmScanner.S3",
+         "Load": 26.8,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Mk1",
+         "FileName": "spotLight1",
+         "Load": 2.4,
+         "LoadScale": "min",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Mk2",
+         "FileName": "spotLight2",
+         "Load": 1.2,
+         "LoadScale": "min",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Cherry Light",
+         "FileName": "Cherry Light",
+         "Load": 0.02,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Junior",
+         "FileName": "MiniDrill",
+         "Load": 3,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "Senior",
+         "FileName": "RadialDrill",
+         "Load": 15,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "125_Small",
+         "FileName": "MiniISRU",
+         "Load": 30,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "250_Large",
+         "FileName": "ISRU",
+         "Load": 30,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "1P2_Cylinder",
+         "FileName": "piston.02",
+         "Load": 1.3,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "1P4_Cylinder",
+         "FileName": "piston.04",
+         "Load": 2.7,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "3P6_Cylinder",
+         "FileName": "piston.01",
+         "Load": 53.3,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "3PT_Cylinder",
+         "FileName": "piston.03",
+         "Load": 106.7,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "EM-16_Rotor",
+         "FileName": "rotor.01",
+         "Load": 1.6,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "EM-16S_Rotor",
+         "FileName": "rotor.01s",
+         "Load": 1.6,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "EM-32_Rotor",
+         "FileName": "rotor.02",
+         "Load": 5.6,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "EM-32S_Rotor",
+         "FileName": "rotor.02s",
+         "Load": 5.6,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "EM-64_Rotor",
+         "FileName": "rotor.03",
+         "Load": 32,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "EM-64S_Rotor",
+         "FileName": "'rotor.03s",
+         "Load": 32,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "G00_Hinge",
+         "FileName": "hinge.01.s",
+         "Load": 1.3,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "G01L_Hinge",
+         "FileName": "hinge.03.s",
+         "Load": 5.3,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "G11_Hinge",
+         "FileName": "hinge.01",
+         "Load": 5.3,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "G12L_Hinge",
+         "FileName": "hinge.03",
+         "Load": 21.3,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "G32W_Hinge",
+         "FileName": "hinge.04",
+         "Load": 32,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "F-12_Servo",
+         "FileName": "rotoServo.02",
+         "Load": 4,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "M-06_Servo",
+         "FileName": "rotoServo.00",
+         "Load": 1.3,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "M-12_Servo",
+         "FileName": "rotoServo.03",
+         "Load": 5.3,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "M-25_Servo",
+         "FileName": "rotoServo.04",
+         "Load": 26.7,
+         "LoadScale": "sec",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      },
+      {
+         "name": "KAL1000_Controller",
+         "FileName": "controller1000",
+         "Load": 6,
+         "LoadScale": "min",
+         "RWLoad": 0,
+         "RWScale": "sec",
+         "Production": 0,
+         "Battery": 0
+      }
+   ]
+}

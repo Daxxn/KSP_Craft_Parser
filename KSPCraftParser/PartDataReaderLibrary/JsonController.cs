@@ -65,11 +65,12 @@ namespace PartDataReaderLibrary
             }
         }
 
-        public static T OpenJsonFile<T>( string path, string name )
+        public static T OpenJsonFile<T>( string name )
         {
             try
             {
-                using (StreamReader reader = new StreamReader(Path.Combine(path, name + ".json")))
+                string fullPath = GetJsonPath(name);
+                using (StreamReader reader = new StreamReader(fullPath))
                 {
                     JsonSerializerSettings settings = new JsonSerializerSettings()
                     {
@@ -84,6 +85,14 @@ namespace PartDataReaderLibrary
             {
                 throw e;
             }
+        }
+
+        private static string GetJsonPath( string name )
+        {
+            var thisDir = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent;
+            string dirPath = Path.Combine(thisDir.FullName, "JsonData");
+
+            return Path.Combine(dirPath, Path.ChangeExtension(name, "json"));
         }
         #endregion
 

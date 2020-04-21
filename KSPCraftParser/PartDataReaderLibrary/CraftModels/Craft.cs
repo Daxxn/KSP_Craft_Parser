@@ -4,20 +4,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PartDataReaderLibrary.PartModels
+namespace PartDataReaderLibrary.CraftModels
 {
-    public class AntennaModel
+    public class Craft
 	{
 		#region - Fields & Properties
 		public string Name { get; set; }
-		public string FileName { get; set; }
-		public double ECperMit { get; set; }
-		public double MitsperSec { get; set; }
-		public int Range { get; set; }
+		public string Description { get; set; }
+		public int StageCount { get; set; }
+		public List<Part> ElectricalParts { get; set; }
 		#endregion
 
 		#region - Constructors
-		public AntennaModel( ) { }
+		public Craft( )
+		{
+			ElectricalParts = new List<Part>();
+		}
 		#endregion
 
 		#region - Methods

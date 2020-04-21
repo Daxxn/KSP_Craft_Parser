@@ -1,20 +1,20 @@
-﻿using PartDataReaderLibrary.Interfaces;
+﻿using PartDataReaderLibrary.CraftModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PartDataReaderLibrary.PartModels
+namespace CalculationLibrary
 {
-    public class AntennaPartsModel : IJson
+    public class Calculator
 	{
 		#region - Fields & Properties
-		public List<AntennaModel> Antennas { get; set; }
+		public Craft ElectricalCraft { get; set; }
 		#endregion
 
 		#region - Constructors
-		public AntennaPartsModel( ) { }
+		public Calculator( ) { }
 		#endregion
 
 		#region - Methods

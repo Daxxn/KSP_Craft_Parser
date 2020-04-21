@@ -1,21 +1,20 @@
-﻿using System;
+﻿using PartDataReaderLibrary.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PartDataReaderLibrary.JosnModels
+namespace PartDataReaderLibrary.JsonModels
 {
-    public class ScienceModel
+    public class AntennaPartsModel : IJson
 	{
 		#region - Fields & Properties
-		public string Name { get; set; }
-		public int Value { get; set; }
-		public int DataSize { get; set; }
+		public List<AntennaModel> Antennas { get; set; }
 		#endregion
 
 		#region - Constructors
-		public ScienceModel( ) { }
+		public AntennaPartsModel( ) { }
 		#endregion
 
 		#region - Methods
