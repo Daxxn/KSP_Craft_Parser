@@ -89,8 +89,9 @@ namespace PartDataReaderLibrary
 
         private static string GetJsonPath( string name )
         {
-            var thisDir = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent;
-            string dirPath = Path.Combine(thisDir.FullName, "JsonData");
+            string partLibrary = "PartDataReaderLibrary";
+            var mainDir = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent.Parent;
+            string dirPath = Path.Combine(mainDir.FullName, partLibrary, "JsonData");
 
             return Path.Combine(dirPath, Path.ChangeExtension(name, "json"));
         }

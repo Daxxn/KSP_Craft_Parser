@@ -4,14 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PartDataReaderLibrary.JsonModels
+namespace PartDataReaderLibrary.CraftModels
 {
     public class ScienceModel
 	{
 		#region - Fields & Properties
 		public string Name { get; set; }
-		public int Value { get; set; }
 		public int DataSize { get; set; }
+		public int BaseValue { get; set; }
+		public int MaxValue { get; set; }
+		public int TransmitEfficiency { get; set; }
 		#endregion
 
 		#region - Constructors
@@ -23,7 +25,13 @@ namespace PartDataReaderLibrary.JsonModels
 		#endregion
 
 		#region - Full Properties
-
+		public double TransmitEfficiencyDecimal
+		{
+			get
+			{
+				return TransmitEfficiency / 100;
+			}
+		}
 		#endregion
 	}
 }

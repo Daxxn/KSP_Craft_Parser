@@ -6,9 +6,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-using PartDataReaderLibrary.JsonModels;
+using PartDataReaderLibrary.CraftModels;
 using KSPCraftParserConsole.FileControl;
-using KSPCraftParserConsole.Properties;
+using PartDataReaderLibrary.Calculators;
 
 namespace KSPCraftParserConsole
 {
@@ -17,7 +17,21 @@ namespace KSPCraftParserConsole
         static void Main( string[] args )
         {
             #region Testing Region
-            CraftController.ParseElectricalParts("1_9 Science", "vab", "Parser Test 1");
+            string jsonPartPath = @"D:\Games\KSP\Notes\PartData\KSP_Parts_Mk3.json";
+            string craftPath = @"D:\Games\steamapps\common\Kerbal Space Program\saves\Ship Testing\Ships\VAB\TestCraft2.craft";
+            string jsonSciencePath = @"D:\Games\KSP\Notes\PartData\KSP_Science_Experiments_Mk1.json";
+
+            Craft testCraft = new Craft();
+
+            CraftModel allParts = JsonController.OpenJsonFile<CraftModel>("KSP_Parts_Mk3");
+            ScienceExperiments allScience = JsonController.OpenJsonFile<ScienceExperiments>("KSP_Science_Experiments_Mk1");
+
+            testCraft = CraftController.ParseCraftFile(FileController.ReadCraftFile(craftPath));
+            testCraft = CraftController.SortParts(testCraft, allParts);
+
+            allScience.SortExperiments(testCraft);
+            CalcManager calculator = new CalcManager(testCraft);
+            calculator.Calculate();
             #endregion
 
             #region Completed Region
@@ -31,7 +45,7 @@ namespace KSPCraftParserConsole
             #endregion
         }
 
-        public static string GetConsoleInput(  )
+        public static string GetConsoleInput( )
         {
             string output = "";
             bool done = false;

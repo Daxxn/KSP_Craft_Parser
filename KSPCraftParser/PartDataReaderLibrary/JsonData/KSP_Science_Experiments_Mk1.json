@@ -1,0 +1,143 @@
+{
+   "Experiments": [
+      {
+         "Name": "CrewReport",
+         "DataSize": 5,
+         "BaseValue": 5,
+         "MaxValue": 5,
+         "TransmitEfficiency": 100
+      },
+      {
+         "Name": "SurfaceSample",
+         "DataSize": 30,
+         "BaseValue": 30,
+         "MaxValue": 40,
+         "TransmitEfficiency": 25
+      },
+      {
+         "Name": "AsteroidSample",
+         "DataSize": 60,
+         "BaseValue": 60,
+         "MaxValue": 70,
+         "TransmitEfficiency": 30
+      },
+      {
+         "Name": "EVAReport",
+         "DataSize": 8,
+         "BaseValue": 8,
+         "MaxValue": 8,
+         "TransmitEfficiency": 100
+      },
+      {
+         "Name": "MysteryGooObserv",
+         "DataSize": 10,
+         "BaseValue": 10,
+         "MaxValue": 13,
+         "TransmitEfficiency": 30
+      },
+      {
+         "Name": "MaterialStudy",
+         "DataSize": 25,
+         "BaseValue": 25,
+         "MaxValue": 32,
+         "TransmitEfficiency": 35
+      },
+      {
+         "Name": "TemperatureScan",
+         "DataSize": 8,
+         "BaseValue": 8,
+         "MaxValue": 8,
+         "TransmitEfficiency": 50
+      },
+      {
+         "Name": "PressureScan",
+         "DataSize": 12,
+         "BaseValue": 12,
+         "MaxValue": 12,
+         "TransmitEfficiency": 50
+      },
+      {
+         "Name": "SeismicScan",
+         "DataSize": 50,
+         "BaseValue": 20,
+         "MaxValue": 22,
+         "TransmitEfficiency": 45
+      },
+      {
+         "Name": "GravityScan",
+         "DataSize": 60,
+         "BaseValue": 20,
+         "MaxValue": 22,
+         "TransmitEfficiency": 40
+      },
+      {
+         "Name": "AtmosphereAnalysis",
+         "DataSize": 200,
+         "BaseValue": 20,
+         "MaxValue": 24,
+         "TransmitEfficiency": 60
+      },
+      {
+         "Name": "IRTelescope",
+         "DataSize": 30,
+         "BaseValue": 15,
+         "MaxValue": 22,
+         "TransmitEfficiency": 40
+      },
+      {
+         "Name": "RoboticArmScan_1",
+         "DataSize": 30,
+         "BaseValue": 30,
+         "MaxValue": 30,
+         "TransmitEfficiency": 100
+      },
+      {
+         "Name": "RoboticArmScan_2",
+         "DataSize": 45,
+         "BaseValue": 45,
+         "MaxValue": 45,
+         "TransmitEfficiency": 100
+      },
+      {
+         "Name": "RoboticArmScan_3",
+         "DataSize": 60,
+         "BaseValue": 60,
+         "MaxValue": 60,
+         "TransmitEfficiency": 100
+      },
+      {
+         "Name": "MultiSpectralAnalysis",
+         "DataSize": 34,
+         "BaseValue": 15,
+         "MaxValue": 15,
+         "TransmitEfficiency": 100
+      },
+      {
+         "Name": "LowResRadarAnalysis",
+         "DataSize": 20,
+         "BaseValue": 10,
+         "MaxValue": 10,
+         "TransmitEfficiency": 100
+      },
+      {
+         "Name": "HighResRadarAnalysis",
+         "DataSize": 80,
+         "BaseValue": 20,
+         "MaxValue": 20,
+         "TransmitEfficiency": 100
+      },
+      {
+         "Name": "BiomeAnomaly",
+         "DataSize": 45,
+         "BaseValue": 15,
+         "MaxValue": 15,
+         "TransmitEfficiency": 100
+      }
+   ],
+   "CrewExperiments" : [
+      "CrewReport",
+      "SurfaceSample",
+      "AsteroidSample",
+      "EVAReport"
+   ]
+}

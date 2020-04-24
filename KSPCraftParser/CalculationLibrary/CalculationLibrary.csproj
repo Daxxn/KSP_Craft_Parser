@@ -41,8 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Calculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PartDataReaderLibrary\PartDataReaderLibrary.csproj">
+      <Project>{5E2C36E2-60DD-46E4-AAA6-2E8D4C0EF2A0}</Project>
+      <Name>PartDataReaderLibrary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

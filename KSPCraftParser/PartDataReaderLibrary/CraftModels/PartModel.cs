@@ -1,20 +1,22 @@
-﻿using PartDataReaderLibrary.CraftModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CalculationLibrary
+namespace PartDataReaderLibrary.CraftModels
 {
-    public class Calculator
+    public class PartModel
 	{
 		#region - Fields & Properties
-		public Craft ElectricalCraft { get; set; }
+		public string Name { get; set; }
+		public string FileName { get; set; }
+		public string Type { get; set; }
+		public List<DataPoint> Data { get; set; }
 		#endregion
 
 		#region - Constructors
-		public Calculator( ) { }
+		public PartModel( ) { }
 		#endregion
 
 		#region - Methods

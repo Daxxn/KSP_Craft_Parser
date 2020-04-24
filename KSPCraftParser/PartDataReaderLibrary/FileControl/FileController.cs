@@ -17,7 +17,7 @@ namespace KSPCraftParserConsole.FileControl
 		// (                                             Main Folder                                             )(      Save      )( Building )(   Ship    )( Ext )
 		// D:\Games\steamapps\common\Kerbal Space Program\saves-1_9 Science Ships\VAB-Apolooo 1-.craft
 		// D:\Games\steamapps\common\Kerbal Space Program\saves\1_9 Science\Ships\VAB\Apoloo 1.craft
-		public static string CreatePath( string gameFolder, string saveName, string building, string shipName )
+		public static string ReadCraftFile( string gameFolder, string saveName, string building, string shipName )
 		{
 			string buildingPath;
 
@@ -38,7 +38,7 @@ namespace KSPCraftParserConsole.FileControl
 
 			if (File.Exists(fullPath))
 			{
-				return fullPath;
+				return ReadFileToEnd(fullPath);
 			}
 			else
 			{
@@ -46,7 +46,19 @@ namespace KSPCraftParserConsole.FileControl
 			}
 		}
 
-		public static List<string> ReadCraftFile( string path )
+		public static string ReadCraftFile( string filePath )
+		{
+			if (File.Exists(filePath))
+			{
+				return ReadFileToEnd(filePath);
+			}
+			else
+			{
+				throw new FileNotFoundException("Full file path doesnt match any files.");
+			}
+		}
+
+		public static List<string> ReadFileLines( string path )
 		{
 			List<string> rawCraftData = new List<string>();
 
@@ -61,7 +73,7 @@ namespace KSPCraftParserConsole.FileControl
 			return rawCraftData;
 		}
 
-		public static string ReadJsonFile( string path )
+		public static string ReadFileToEnd( string path )
 		{
 			if (File.Exists(path))
 			{
