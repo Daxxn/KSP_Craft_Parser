@@ -35,40 +35,22 @@ namespace PartDataReaderLibrary.Calculators
 			CalcMaxRange();
 		}
 
+		public override string PrintData( )
+		{
+			StringBuilder builder = new StringBuilder("Comm Data :");
+			builder.AppendLine($"Signal Strength : {SignalStrength}");
+			builder.AppendLine($"Max Range : {MaximumRange * 0.001}Km");
+			builder.AppendLine($"Craft Power : {CraftPower}");
+			builder.AppendLine($"Antenna Load : {LowestAntennaLoad}EC");
+			builder.AppendLine($"Highest Antenna Power Required : {HighestAntennaPowerRequired}");
+			builder.AppendLine($"Lowest Antenna Power Required : {LowestAntennaLoad}");
+			return builder.ToString();
+		}
+
 		private void CalcAntennas( )
 		{
 			if (Craft.Antennas.Count != 0)
 			{
-				#region V-1
-				//if (Craft.Antennas.Count > 1)
-				//{
-				//	List<double> combExponents = new List<double>();
-				//	List<double> powers = new List<double>()
-				//	{
-				//		KSCPowerLevels[KSCTrackingStationLevel],
-				//		5000
-				//	};
-
-				//	foreach (var antenna in Craft.Antennas)
-				//	{
-				//		double antRange = antenna.GetValue("Range");
-				//		if (StrongestAntenna < antRange)
-				//		{
-				//			StrongestAntenna = antRange;
-				//		}
-				//		combExponents.Add(antenna.GetValue("CombineExp"));
-				//		powers.Add(antRange);
-				//	}
-				//	CraftPowerSum = powers.Sum();
-				//	CalcCombineExp(combExponents.ToArray(), powers.ToArray());
-				//}
-				//else
-				//{
-
-				//	CombinabilityExponent = Craft.Antennas[ 0 ].GetValue("CombineExp");
-				//}
-				#endregion
-
 				#region V-2
 				if (Craft.Antennas.Count > 1)
 				{
@@ -85,7 +67,6 @@ namespace PartDataReaderLibrary.Calculators
 			{
 				StrongestAntenna = 5000;
 				CraftPowerSum = 5000;
-				//CraftPower = 5000;
 			}
 		}
 
@@ -97,10 +78,16 @@ namespace PartDataReaderLibrary.Calculators
 			foreach (var antenna in Craft.Antennas)
 			{
 				double antPower = antenna.GetValue("Range");
+				double antLoad = antenna.GetValue("ECperMit");
 
 				if (antPower > StrongestAntenna)
 				{
 					StrongestAntenna = antPower;
+				}
+
+				if (antLoad < LowestAntennaLoad)
+				{
+					LowestAntennaLoad = antLoad;
 				}
 
 				powers.Add(antPower);
@@ -140,8 +127,15 @@ namespace PartDataReaderLibrary.Calculators
 		{
 			MaximumRange = Math.Sqrt(KSCPowerLevels[ KSCTrackingStationLevel ] * CraftPower);
 		}
+		public void CalcHighestAntennaDraw( int largestFile )
+		{
+			HighestAntennaPowerRequired = largestFile * LowestAntennaLoad;
+		}
 
-
+		public void CalcTotalAntennaDraw( int totalData )
+		{
+			TotalAntennaPowerRequired = totalData * LowestAntennaLoad;
+		}
 		#endregion
 
 		#region - Full Properties

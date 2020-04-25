@@ -35,6 +35,24 @@ namespace PartDataReaderLibrary.Calculators
             ElectricalCalc.Calculate();
             ThrustCalc.Calculate();
         }
+
+        public void SecondCalculate( )
+        {
+            CommCalc.CalcHighestAntennaDraw(ScienceCalc.LargestFile);
+            CommCalc.CalcTotalAntennaDraw(ScienceCalc.TotalData);
+        }
+
+        public void PrintData( )
+        {
+            StringBuilder builder = new StringBuilder("All Data :\n");
+            builder.AppendLine(ScienceCalc.PrintData());
+            builder.AppendLine();
+            builder.AppendLine(CommCalc.PrintData());
+            builder.AppendLine();
+            builder.AppendLine(ElectricalCalc.PrintData());
+            builder.AppendLine();
+            builder.AppendLine(ThrustCalc.PrintData());
+        }
         #endregion
 
         #region - Full Properties

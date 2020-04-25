@@ -32,6 +32,7 @@ namespace KSPCraftParserConsole
             allScience.SortExperiments(testCraft);
             CalcManager calculator = new CalcManager(testCraft);
             calculator.Calculate();
+            calculator.PrintData();
             #endregion
 
             #region Completed Region

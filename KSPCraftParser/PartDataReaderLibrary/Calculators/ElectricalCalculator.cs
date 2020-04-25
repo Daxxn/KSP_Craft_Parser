@@ -14,6 +14,11 @@ namespace PartDataReaderLibrary.Calculators
 		public double TotalRWLoad { get; set; }
 		public double TotalProduction { get; set; }
 		public double TotalBattery { get; set; }
+		public double RequiredCapacity { get; set; }
+
+		public double ChargeRate { get; set; }
+		public double ChargeSeconds { get; set; }
+		public TimeSpan ChargeTime { get; set; }
 		#endregion
 
 		#region - Constructors
@@ -27,6 +32,25 @@ namespace PartDataReaderLibrary.Calculators
 		public override void Calculate( )
 		{
 			SumTotals();
+
+			CalcRequiredBatteryCapacity();
+			CalcChargeRate();
+			CalcChargeSeconds();
+			CalcChargeTime();
+		}
+
+		public override string PrintData( )
+		{
+			StringBuilder builder = new StringBuilder("Electrical Data :");
+			builder.AppendLine($"Total Load : {TotalLoad}");
+			builder.AppendLine($"Total Reaction Wheel Load : {TotalRWLoad}");
+			builder.AppendLine($"Total Production : {TotalProduction}");
+			builder.AppendLine($"Total Battery Capacity : {TotalBattery}");
+			builder.AppendLine($"Required Battery Capacity : {RequiredCapacity}");
+			builder.AppendLine($"Charge Rate : {ChargeRate}");
+			builder.AppendLine($"Charge Time per sec : {ChargeSeconds}");
+			builder.AppendLine($"Charge Time : {ChargeTime:dd/hh/mm/ss}");
+			return builder.ToString();
 		}
 		private void SumTotals( )
 		{
@@ -113,6 +137,26 @@ namespace PartDataReaderLibrary.Calculators
 			{
 				return value;
 			}
+		}
+
+		private void CalcRequiredBatteryCapacity( )
+		{
+			RequiredCapacity = TotalBattery - HighestAntennaPowerRequired;
+		}
+
+		private void CalcChargeRate( )
+		{
+			ChargeRate = (TotalLoad + TotalRWLoad) - TotalProduction;
+		}
+
+		private void CalcChargeSeconds( )
+		{
+			ChargeSeconds = TotalBattery / ChargeRate;
+		}
+
+		private void CalcChargeTime( )
+		{
+			ChargeTime = new TimeSpan(0, 0, (int)Math.Round(ChargeSeconds));
 		}
 		#endregion
 

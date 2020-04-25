@@ -10,12 +10,9 @@ namespace PartDataReaderLibrary.Calculators
     public class ScienceCalculator : CalculatorBase
 	{
 		#region - Fields & Properties
-		public ScienceExperiments Science { get; set; }
 		public double TotalBaseSciencePoints { get; set; }
 		public double TotalMaxSciencePoints { get; set; }
-		public double TotalData { get; set; }
 		public int ExperimentCount { get; set; }
-		public int LargestFile { get; set; }
 		#endregion
 
 		#region - Constructors
@@ -29,6 +26,17 @@ namespace PartDataReaderLibrary.Calculators
 		public override void Calculate( )
 		{
 			SumTotals();
+		}
+
+		public override string PrintData( )
+		{
+			StringBuilder builder = new StringBuilder("Science Data :");
+			builder.AppendLine($"Total Min Science : {TotalBaseSciencePoints}Sp");
+			builder.AppendLine($"Total Max Science : {TotalMaxSciencePoints}Sp");
+			builder.AppendLine($"Experiment Count : {ExperimentCount}");
+			builder.AppendLine($"Total Data : {TotalData}Mits");
+			builder.AppendLine($"Largest Experiment : {LargestFile}");
+			return builder.ToString();
 		}
 
 		private void SumTotals( )

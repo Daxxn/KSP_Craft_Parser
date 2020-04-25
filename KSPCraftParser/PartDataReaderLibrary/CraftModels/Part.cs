@@ -51,6 +51,37 @@ namespace PartDataReaderLibrary.CraftModels
 				}
 				else
 				{
+					throw new Exception("Data value not found.");
+				}
+			}
+			else
+			{
+				return Data[ 0 ].ParseValue;
+			}
+		}
+
+		public dynamic SearchValue( string name )
+		{
+			if (Data.Count > 1)
+			{
+				dynamic output = 0;
+				bool foundName = false;
+
+				foreach (var datum in Data)
+				{
+					if (datum.Name == name)
+					{
+						output = datum.ParseValue;
+						foundName = true;
+						break;
+					}
+				}
+				if (foundName)
+				{
+					return output;
+				}
+				else
+				{
 					return 0;
 				}
 			}

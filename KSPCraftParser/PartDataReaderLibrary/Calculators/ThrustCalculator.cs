@@ -12,7 +12,6 @@ namespace PartDataReaderLibrary.Calculators
 		#region - Fields & Properties
 		public double TotalDryMass { get; set; }
 		public double TotalWetMass { get; set; }
-		public double TotalLoad { get; set; }
 		public double TotalThrust { get; set; }
 		public double TotalISP { get; set; }
 		#endregion
@@ -28,6 +27,16 @@ namespace PartDataReaderLibrary.Calculators
 		public override void Calculate( )
 		{
 			SumMasses();
+		}
+
+		public override string PrintData( )
+		{
+			StringBuilder builder = new StringBuilder("Thrust Data :");
+			builder.AppendLine($"Dry Mass : {TotalDryMass}");
+			builder.AppendLine($"Wet Mass : {TotalWetMass}");
+			builder.AppendLine($"Total Thrust : {TotalThrust}");
+			builder.AppendLine($"Total ISP : {TotalISP}");
+			return builder.ToString();
 		}
 
 		private void SumMasses( )
@@ -82,7 +91,7 @@ namespace PartDataReaderLibrary.Calculators
 		{
 			foreach (var part in partList)
 			{
-				TotalDryMass += part.GetValue(name);
+				TotalDryMass += part.SearchValue(name);
 			}
 		}
 		#endregion

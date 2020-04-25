@@ -10,7 +10,16 @@ namespace PartDataReaderLibrary.Calculators
     public class CalculatorBase
 	{
 		#region - Fields & Properties
+		public delegate void PrintResult( string output );
 		public Craft Craft { get; set; }
+
+		#region Shared Values
+		public double LowestAntennaLoad { get; set; } = Double.MaxValue;
+		public double HighestAntennaPowerRequired { get; set; }
+		public double TotalAntennaPowerRequired { get; set; }
+		public int LargestFile { get; set; }
+		public int TotalData { get; set; }
+		#endregion
 		#endregion
 
 		#region - Constructors
@@ -20,32 +29,9 @@ namespace PartDataReaderLibrary.Calculators
 		#region - Methods
 		public virtual void Calculate( ) { }
 
-		protected dynamic GetValue( List<DataPoint> data, string name )
+		public virtual string PrintData()
 		{
-			if (data.Count > 1)
-			{
-				dynamic output = 0;
-				bool foundName = false;
-				foreach (var datum in data)
-				{
-					if (datum.Name == name)
-					{
-						output = datum.ParseValue;
-					}
-				}
-				if (foundName)
-				{
-					return output;
-				}
-				else
-				{
-					throw new Exception("No data found with that name.");
-				}
-			}
-			else
-			{
-				return data[ 0 ].ParseValue;
-			}
+			return $"Lowest Antenna : {LowestAntennaLoad}\nMin Antenna Power Required : {HighestAntennaPowerRequired}\nMax Antenna Power Required : {TotalAntennaPowerRequired}";
 		}
 		#endregion
 
