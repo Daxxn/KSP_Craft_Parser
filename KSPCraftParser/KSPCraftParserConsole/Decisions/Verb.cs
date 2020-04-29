@@ -9,7 +9,10 @@ namespace KSPCraftParserConsole.Decisions
     public enum Verb
     {
         Open,
+        Move,
+        List,
         Run,
-        Exit
+        Exit,
+        Clear
     }
 }

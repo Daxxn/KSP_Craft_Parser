@@ -4,14 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KSPCraftParserConsole.Decisions
+namespace KSPCraftParserConsole.Commands
 {
-    public enum Noun
+    public interface IMainStrategy
     {
-        Craft,
-        Part,
-        File,
-        Dir,
-        Settings
+        void Execute( );
     }
 }

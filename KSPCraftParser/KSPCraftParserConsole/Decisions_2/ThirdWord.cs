@@ -4,14 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KSPCraftParserConsole.Decisions
+namespace KSPCraftParserConsole.Decisions_2
 {
-    public enum Noun
+    public enum ThirdWord
     {
-        Craft,
-        Part,
-        File,
-        Dir,
-        Settings
+        Data,
+        to
     }
 }

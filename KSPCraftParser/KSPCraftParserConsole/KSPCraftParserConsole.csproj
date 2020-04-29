@@ -44,8 +44,27 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Command.cs" />
+    <Compile Include="CommandException.cs" />
+    <Compile Include="Commands\CalcStrategy.cs" />
+    <Compile Include="Commands\ClearStrategy.cs" />
+    <Compile Include="Commands\DeleteStrategy.cs" />
+    <Compile Include="Commands\IMainStrategy.cs" />
+    <Compile Include="Commands\ListStrategy.cs" />
+    <Compile Include="Commands\MoveStrategy.cs" />
+    <Compile Include="Commands\OpenStrategy.cs" />
+    <Compile Include="Commands\PartStrategy.cs" />
+    <Compile Include="Commands\SetStrategy.cs" />
+    <Compile Include="Commands\StupidParser.cs" />
+    <Compile Include="ConsoleFormatter.cs" />
+    <Compile Include="ConsoleFormatters\DataGrid.cs" />
+    <Compile Include="ConsoleFormatters\PathFormatter.cs" />
     <Compile Include="Decisions\Verb.cs" />
     <Compile Include="Decisions\Noun.cs" />
+    <Compile Include="Decisions_2\FirstWord.cs" />
+    <Compile Include="Decisions_2\Grammar.cs" />
+    <Compile Include="Decisions_2\SecondWord.cs" />
+    <Compile Include="Decisions_2\ThirdWord.cs" />
+    <Compile Include="DirectoryData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
