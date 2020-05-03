@@ -91,7 +91,7 @@ namespace PartDataReaderLibrary.Calculators
 		{
 			foreach (var part in partList)
 			{
-				TotalDryMass += part.SearchValue(name);
+				TotalDryMass += (double)part.SearchValue(name);
 			}
 		}
 		#endregion

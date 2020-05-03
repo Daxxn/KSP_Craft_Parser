@@ -65,7 +65,7 @@ namespace PartDataReaderLibrary
             }
         }
 
-        public static T OpenJsonFile<T>( string name )
+        public static T OpenJsonFile<T>( string name ) where T : IJson
         {
             try
             {
@@ -89,6 +89,10 @@ namespace PartDataReaderLibrary
 
         private static string GetJsonPath( string name )
         {
+            if (File.Exists(name))
+            {
+                return name;
+            }
             string partLibrary = "PartDataReaderLibrary";
             var mainDir = new DirectoryInfo(Directory.GetCurrentDirectory()).Parent.Parent.Parent;
             string dirPath = Path.Combine(mainDir.FullName, partLibrary, "JsonData");

@@ -9,8 +9,8 @@ namespace KSPCraftParserConsole.ConsoleFormatters
 {
     public enum PathOptions
     {
-        ReplaceMiddleOfPaths,
-        ReplaceFolderNames,
+        ReplaceMiddle,
+        ReplaceFolders,
         Auto
     }
     public static class PathFormatter

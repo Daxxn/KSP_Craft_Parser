@@ -58,23 +58,17 @@
     <Compile Include="CraftModels\PartModel.cs" />
     <Compile Include="CraftModels\ScienceExperiments.cs" />
     <Compile Include="CraftModels\ScienceModel.cs" />
+    <Compile Include="Exceptions\CraftException.cs" />
+    <Compile Include="Exceptions\JsonException.cs" />
+    <Compile Include="Exceptions\PartNotFoundException.cs" />
     <Compile Include="FileControl\FileController.cs" />
     <Compile Include="Interfaces\IJson.cs" />
     <Compile Include="JsonController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\PathSettings.Designer.cs">
-      <DependentUpon>PathSettings.settings</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
-    <None Include="Properties\PathSettings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>PathSettings.Designer.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="JsonData\" />

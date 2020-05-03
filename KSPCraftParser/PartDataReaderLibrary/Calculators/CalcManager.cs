@@ -38,11 +38,11 @@ namespace PartDataReaderLibrary.Calculators
 
         public void SecondCalculate( )
         {
-            CommCalc.CalcHighestAntennaDraw(ScienceCalc.LargestFile);
-            CommCalc.CalcTotalAntennaDraw(ScienceCalc.TotalData);
+            CommCalc.CalcHighestAntennaDraw(CalculatorBase.LargestFile);
+            CommCalc.CalcTotalAntennaDraw(CalculatorBase.TotalData);
         }
 
-        public void PrintData( )
+        public string PrintData( )
         {
             StringBuilder builder = new StringBuilder("All Data :\n");
             builder.AppendLine(ScienceCalc.PrintData());
@@ -52,6 +52,8 @@ namespace PartDataReaderLibrary.Calculators
             builder.AppendLine(ElectricalCalc.PrintData());
             builder.AppendLine();
             builder.AppendLine(ThrustCalc.PrintData());
+
+            return builder.ToString();
         }
         #endregion
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KSPCraftParserConsole.DataContainers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,6 +11,7 @@ namespace KSPCraftParserConsole.ConsoleFormatters
     {
         #region - Fields & Properties
         #region -- Static Properties
+        public static SettingsData Settings { get; set; } = SettingsData.Instance;
         public static bool AutoColumns { get; set; } = true;
         public static int ManulaColumnCount { get; set; } = 4;
         public static bool PrintVertical { get; set; } = true;
@@ -40,6 +42,10 @@ namespace KSPCraftParserConsole.ConsoleFormatters
         #endregion
 
         #region - Methods
+        public static void OnStartup( )
+        {
+
+        }
         public void PrintDataGrid( )
         {
             if (typeof(T) != typeof(string))
@@ -55,9 +61,13 @@ namespace KSPCraftParserConsole.ConsoleFormatters
                 StringData = Data as string[];
             }
 
-            if (AutoColumns)
+            //if (AutoColumns)
+            if (Properties.Settings.Default.AutoFormatGrid)
+            //if ((bool)Settings.AllSettings["AutoFormatGrid"].Value)
             {
-                if (PrintVertical)
+                //if (PrintVertical)
+                if (Properties.Settings.Default.PrintVertical)
+                //if ((bool)Settings.AllSettings["PrintVertical"].Value)
                 {
                     (int longestItem, int col) = GetColumnCount_2();
 
@@ -77,9 +87,13 @@ namespace KSPCraftParserConsole.ConsoleFormatters
             }
             else
             {
-                if (PrintVertical)
+                //if (PrintVertical)
+                if (Properties.Settings.Default.PrintVertical)
+                //if ((bool)Settings.AllSettings["PrintVertical"].Value)
                 {
-                    if (PrintDecorations)
+                    //if (PrintDecorations)
+                    if (Properties.Settings.Default.PrintDecorations)
+                    //if ((bool)Settings.AllSettings["PrintDecorations"].Value)
                     {
                         PrintDataGridVerticalDeco(ManulaColumnCount);
                     }
@@ -336,6 +350,9 @@ namespace KSPCraftParserConsole.ConsoleFormatters
                             }
                         }
 
+                        ConsoleColor oldColor = Console.ForegroundColor;
+                        Console.ForegroundColor = TextColor;
+
                         if (SpanScreen)
                         {
                             offset = Console.WindowWidth / columns;
@@ -390,6 +407,7 @@ namespace KSPCraftParserConsole.ConsoleFormatters
                             Console.Write(Char.ConvertFromUtf32(UTFBlocks[ "Full" ]));
                         }
 
+                        Console.ForegroundColor = oldColor;
                         Console.CursorTop = startPos + rowLength + 2;
                     }
                     else
@@ -421,6 +439,9 @@ namespace KSPCraftParserConsole.ConsoleFormatters
                         int startPos = Console.CursorTop + 1;
                         int rowLength = StringData.Length / columns;
                         int offset = 10;
+
+                        ConsoleColor oldColor = Console.ForegroundColor;
+                        Console.ForegroundColor = TextColor;
 
                         if (SpanScreen)
                         {
@@ -476,6 +497,7 @@ namespace KSPCraftParserConsole.ConsoleFormatters
                             Console.Write(Char.ConvertFromUtf32(UTFBlocks[ "Full" ]));
                         }
 
+                        Console.ForegroundColor = oldColor;
                         Console.CursorTop = startPos + rowLength + 2;
                     }
                     else
@@ -496,10 +518,19 @@ namespace KSPCraftParserConsole.ConsoleFormatters
         /// <param name="data">The string data to be printed.</param>
         public void NormalPrint( )
         {
+            ConsoleColor oldColor = Console.ForegroundColor;
+            //if ((bool)Settings.AllSettings["PrintDecorations"].Value)
+            if (Properties.Settings.Default.PrintDecorations)
+            {
+                Console.ForegroundColor = TextColor;
+            }
+
             foreach (var d in StringData)
             {
                 Console.WriteLine(d);
             }
+
+            Console.ForegroundColor = oldColor;
         }
 
         private (int longestItem, int columns) GetColumnCount( )
@@ -587,6 +618,18 @@ namespace KSPCraftParserConsole.ConsoleFormatters
             }
 
             return (longestItem, columns);
+        }
+
+        public static ConsoleColor ConvertColor( int code )
+        {
+            if (code >= 0 && code < 16)
+            {
+                return (ConsoleColor)Convert.ChangeType(code, typeof(ConsoleColor));
+            }
+            else
+            {
+                return ConsoleColor.White;
+            }
         }
         #endregion
 

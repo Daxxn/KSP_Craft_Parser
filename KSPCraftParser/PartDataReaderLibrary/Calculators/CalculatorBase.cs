@@ -14,11 +14,11 @@ namespace PartDataReaderLibrary.Calculators
 		public Craft Craft { get; set; }
 
 		#region Shared Values
-		public double LowestAntennaLoad { get; set; } = Double.MaxValue;
-		public double HighestAntennaPowerRequired { get; set; }
-		public double TotalAntennaPowerRequired { get; set; }
-		public int LargestFile { get; set; }
-		public int TotalData { get; set; }
+		public static double LowestAntennaLoad { get; set; } = Double.MaxValue;
+		public static double HighestAntennaPowerRequired { get; set; }
+		public static double TotalAntennaPowerRequired { get; set; }
+		public static int LargestFile { get; set; }
+		public static int TotalData { get; set; }
 		#endregion
 		#endregion
 

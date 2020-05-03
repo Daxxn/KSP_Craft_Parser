@@ -62,6 +62,7 @@ namespace PartDataReaderLibrary.Calculators
 					CraftPowerSum = StrongestAntenna;
 				}
 				#endregion
+				CalcHighestAntennaDraw(LargestFile);
 			}
 			else
 			{
@@ -129,12 +130,12 @@ namespace PartDataReaderLibrary.Calculators
 		}
 		public void CalcHighestAntennaDraw( int largestFile )
 		{
-			HighestAntennaPowerRequired = largestFile * LowestAntennaLoad;
+			HighestAntennaPowerRequired = (double)largestFile * LowestAntennaLoad;
 		}
 
 		public void CalcTotalAntennaDraw( int totalData )
 		{
-			TotalAntennaPowerRequired = totalData * LowestAntennaLoad;
+			TotalAntennaPowerRequired = (double)totalData * LowestAntennaLoad;
 		}
 		#endregion
 

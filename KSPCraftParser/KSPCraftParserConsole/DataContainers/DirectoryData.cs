@@ -5,13 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KSPCraftParserConsole
+namespace KSPCraftParserConsole.DataContainers
 {
     public class DirectoryData
 	{
 		#region - Fields & Properties
 		private static DirectoryData _instance;
-		public string CurrentDir { get; set; } = @"C:\";
+		public string CurrentDir { get; set; } = "";
 		public string CurrentFile { get; set; } = "";
 		public string[] Directories { get; set; } = new string[ 0 ];
 		public string[] Files { get; set; } = new string[ 0 ];
@@ -82,6 +82,20 @@ namespace KSPCraftParserConsole
 			}
 		}
 
+		public bool SetCraftFile( string fileName )
+		{
+			string tempFile = Path.Combine(CurrentDir, fileName);
+			string newFile = Path.ChangeExtension(tempFile, Properties.Settings.Default.CraftFileExt);
+			if (File.Exists(newFile))
+			{
+				CurrentFile = newFile;
+				return true;
+			}
+			else
+			{
+				return false;
+			}
+		}
 		public bool Back( int count )
 		{
 			string tempDir = CurrentDir;
@@ -181,6 +195,43 @@ namespace KSPCraftParserConsole
 					Console.WriteLine($"{i} : ");
 				}
 			}
+		}
+
+		public static void OnStartup( string[] args )
+		{
+			if (args.Length == 2 )
+			{
+				if (args[ 0 ] == "drive")
+				{
+					string[] drives = Environment.GetLogicalDrives();
+
+					if (drives.Length > 1)
+					{
+						if (args.Length == 2)
+						{
+							if (Directory.Exists(args[ 1 ]))
+							{
+								Instance.SetCurrentDir(args[ 1 ]);
+							}
+						}
+					}
+					else
+					{
+						Instance.SetCurrentDir(@"C:\");
+					}
+				}
+			}
+			else
+			{
+				Instance.SetCurrentDir(@"C:\");
+			}
+		}
+
+		public static void OnStartup( )
+		{
+			string[] drives = Environment.GetLogicalDrives();
+
+			Instance.SetCurrentDir(drives[ 0 ]);
 		}
 		#endregion
 

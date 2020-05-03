@@ -1,0 +1,45 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="KSPCraftParserConsole.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="SavesPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\Games\steamapps\common\Kerbal Space Program\saves</Value>
+    </Setting>
+    <Setting Name="DataFilesPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\Cody\source\repos\GitHub\KSP_Craft_Parser\KSPCraftParser\KSPCraftParserConsole\JsonData</Value>
+    </Setting>
+    <Setting Name="ScienceDataFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">KSP_Science_Experiments_Mk1</Value>
+    </Setting>
+    <Setting Name="PartDataFile" Type="System.String" Scope="User">
+      <Value Profile="(Default)">KSP_Parts_Mk3</Value>
+    </Setting>
+    <Setting Name="CraftFileExt" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.craft</Value>
+    </Setting>
+    <Setting Name="DataFileExt" Type="System.String" Scope="User">
+      <Value Profile="(Default)">.json</Value>
+    </Setting>
+    <Setting Name="AutoFormatGrid" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="PrintDecorations" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="TextColor" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">11</Value>
+    </Setting>
+    <Setting Name="ColumnCount" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">4</Value>
+    </Setting>
+    <Setting Name="PrintVertical" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="PathFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Auto</Value>
+    </Setting>
+    <Setting Name="keepPathExt" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

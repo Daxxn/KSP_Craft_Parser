@@ -12,6 +12,7 @@ namespace KSPCraftParserConsole
 	{
 		#region - Fields & Properties
 		private static readonly char[] space = new char[] { ' ' };
+		private static readonly char[] pathDelim = new char[] { '*' };
 		public FirstWord First { get; set; }
 		public SecondWord Second { get; set; }
 		public List<string> Data { get; set; }
@@ -20,6 +21,15 @@ namespace KSPCraftParserConsole
 
 		#region - Constructors
 		public Command( ) { }
+		public Command( FirstWord first, List<string> data )
+		{
+			First = first;
+			Data = data;
+
+			Second = SecondWord.Null;
+
+			SetStrategy(first);
+		}
 		public Command( FirstWord first, SecondWord sec, List<string> data )
 		{
 			First = first;
@@ -39,7 +49,20 @@ namespace KSPCraftParserConsole
 		public static Command ParseCommand( string input )
 		{
 			Command cmd = new Command();
-			string[] split = input.Split(space, StringSplitOptions.RemoveEmptyEntries);
+			string[] split;
+			if (input.Contains("*"))
+			{
+				List<string> temp = new List<string>();
+				var pathSplit = input.Split(pathDelim, StringSplitOptions.RemoveEmptyEntries);
+				string path = pathSplit[ 1 ];
+				temp.AddRange(pathSplit[ 0 ].Split(space, StringSplitOptions.RemoveEmptyEntries));
+				temp.Add(path);
+				split = temp.ToArray();
+			}
+			else
+			{
+				split = input.Split(space, StringSplitOptions.RemoveEmptyEntries); 
+			}
 
 			bool firstSuccess = Enum.TryParse(split[ 0 ].ToLower(), out FirstWord firstOut);
 			bool secondSuccess = false;
@@ -86,7 +109,11 @@ namespace KSPCraftParserConsole
 						}
 						else
 						{
-							throw new Exception("Invalid Command.");
+							for (int i = 1; i < split.Length; i++)
+							{
+								dataOutput.Add(split[ i ]);
+							}
+							cmd = new Command(firstOut, dataOutput);
 						}
 					}
 					else
@@ -105,7 +132,11 @@ namespace KSPCraftParserConsole
 						}
 						else
 						{
-							throw new Exception("Invalid Command.");
+							for (int i = 1; i < split.Length; i++)
+							{
+								dataOutput.Add(split[ i ]);
+							}
+							cmd = new Command(firstOut, dataOutput);
 						}
 					}
 					else
@@ -153,7 +184,7 @@ namespace KSPCraftParserConsole
 					Strategy = new PartStrategy();
 					break;
 				case FirstWord.set:
-					Strategy = new SetStrategy();
+					Strategy = new SetStrategy(Data);
 					break;
 				default:
 					throw new Exception("Could not find strategy.");
@@ -186,7 +217,7 @@ namespace KSPCraftParserConsole
 					Strategy = new PartStrategy();
 					break;
 				case FirstWord.set:
-					Strategy = new SetStrategy();
+					Strategy = new SetStrategy(Data);
 					break;
 				default:
 					throw new Exception("Could not find strategy.");

@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KSPCraftParserConsole", "KS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartDataReaderLibrary", "PartDataReaderLibrary\PartDataReaderLibrary.csproj", "{5E2C36E2-60DD-46E4-AAA6-2E8D4C0EF2A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculationLibrary", "CalculationLibrary\CalculationLibrary.csproj", "{82532F67-2F35-4527-9FD9-0DF7E41730A5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{5E2C36E2-60DD-46E4-AAA6-2E8D4C0EF2A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5E2C36E2-60DD-46E4-AAA6-2E8D4C0EF2A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E2C36E2-60DD-46E4-AAA6-2E8D4C0EF2A0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{82532F67-2F35-4527-9FD9-0DF7E41730A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{82532F67-2F35-4527-9FD9-0DF7E41730A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{82532F67-2F35-4527-9FD9-0DF7E41730A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{82532F67-2F35-4527-9FD9-0DF7E41730A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

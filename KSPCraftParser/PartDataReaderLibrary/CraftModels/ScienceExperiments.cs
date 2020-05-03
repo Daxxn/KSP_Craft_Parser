@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PartDataReaderLibrary.Exceptions;
+using PartDataReaderLibrary.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PartDataReaderLibrary.CraftModels
 {
-    public class ScienceExperiments
+    public class ScienceExperiments : IJson
 	{
 		#region - Fields & Properties
 		public List<ScienceModel> Experiments { get; set; }
@@ -42,15 +44,24 @@ namespace PartDataReaderLibrary.CraftModels
 
 			foreach (var part in parts)
 			{
-				var experiment = part.GetValue("ScienceExp");
-				foreach (var exp in Experiments)
+				try
 				{
-					if (experiment == exp.Name)
+					var experiment = part.GetValue("ScienceExp");
+					foreach (var exp in Experiments)
 					{
-						output.Add(exp);
-						break;
+						if (experiment == exp.Name)
+						{
+							output.Add(exp);
+							break;
+						}
 					}
 				}
+				catch (PartNotFoundException e) { }
+				catch (Exception e)
+				{
+					throw e;
+				}
+				
 			}
 
 			return output;

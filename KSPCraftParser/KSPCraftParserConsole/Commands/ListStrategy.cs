@@ -1,4 +1,5 @@
 ﻿using KSPCraftParserConsole.ConsoleFormatters;
+using KSPCraftParserConsole.DataContainers;
 using KSPCraftParserConsole.Decisions_2;
 using System;
 using System.Collections.Generic;
@@ -104,6 +105,10 @@ namespace KSPCraftParserConsole.Commands
 				fileGrid.PrintDataGrid();
 
 				PrintFileStatus();
+			}
+			else if (Second == SecondWord.settings)
+			{
+
 			}
 			else
 			{

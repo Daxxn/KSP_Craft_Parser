@@ -9,7 +9,8 @@ namespace KSPCraftParserConsole.Decisions_2
     public enum SecondWord
     {
         Null = 0,
-        build,
+        parts,
+        science,
         dir,
         file,
         craft,

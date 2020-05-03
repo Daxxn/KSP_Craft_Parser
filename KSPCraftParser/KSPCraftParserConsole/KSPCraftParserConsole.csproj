@@ -33,6 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -58,25 +59,35 @@
     <Compile Include="ConsoleFormatter.cs" />
     <Compile Include="ConsoleFormatters\DataGrid.cs" />
     <Compile Include="ConsoleFormatters\PathFormatter.cs" />
+    <Compile Include="DataContainers\CraftData.cs" />
+    <Compile Include="DataContainers\Setting.cs" />
+    <Compile Include="DataContainers\SettingsData.cs" />
+    <Compile Include="DataContainers\SettingsData_2.cs" />
     <Compile Include="Decisions\Verb.cs" />
     <Compile Include="Decisions\Noun.cs" />
     <Compile Include="Decisions_2\FirstWord.cs" />
     <Compile Include="Decisions_2\Grammar.cs" />
     <Compile Include="Decisions_2\SecondWord.cs" />
     <Compile Include="Decisions_2\ThirdWord.cs" />
-    <Compile Include="DirectoryData.cs" />
+    <Compile Include="DataContainers\DirectoryData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\CalculationLibrary\CalculationLibrary.csproj">
-      <Project>{82532F67-2F35-4527-9FD9-0DF7E41730A5}</Project>
-      <Name>CalculationLibrary</Name>
-    </ProjectReference>
     <ProjectReference Include="..\PartDataReaderLibrary\PartDataReaderLibrary.csproj">
       <Project>{5e2c36e2-60dd-46e4-aaa6-2e8d4c0ef2a0}</Project>
       <Name>PartDataReaderLibrary</Name>

@@ -31,7 +31,9 @@ namespace KSPCraftParserConsole.Commands
 		{
 			switch (Second)
 			{
-				case SecondWord.build:
+				case SecondWord.parts:
+					break;
+				case SecondWord.science:
 					break;
 				case SecondWord.dir:
 					break;
@@ -40,8 +42,6 @@ namespace KSPCraftParserConsole.Commands
 				case SecondWord.craft:
 					break;
 				case SecondWord.settings:
-					break;
-				case SecondWord.Null:
 					break;
 				default:
 					break;
